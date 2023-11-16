@@ -1,0 +1,98 @@
+<%- include ("partials/header.ejs") %>
+<%- include ("partials/main_nav.ejs") %>
+
+<% if (title === "Home") { %>
+  <!-- main content for the homepage -->
+  <main class="home-background">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+        <div class="content">
+          <div class="para1">
+            <p>
+              Hello! my name is Sulaiman Nezami, a passionate 2nd-year IT student on a journey to achieve my CCNA certification and secure an exciting internship for my 3rd year. My hobbies are playing basketball, and I am a big fan of the NBA. I am always eager to discuss the latest trades and buzzer-beating. The recent Damian Lillard trade to the Bucks was also very crazy.
+            </p>
+          </div>
+          <div class="para2">
+            <p>
+              I enjoy web development, which I also have some hands-on experience in HTML and CSS. This website, I would say, isn't the best as there are also a lot of other scripts I wish I could use but wasn't allowed. Whether you're here to learn more about me on the "About Me" page, explore my IT projects on the "Projects" page, or simply want to get in touch, you're in the right place. Feel free to reach out—I'd love to connect and chat about all things IT, basketball, or whatever else you have in mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="bottom-image">
+    <img src="/Content/background.jpeg" alt="Background Image">
+  </div>
+<% } else if (title === "About") { %>
+  <!-- main content for the About Me page -->
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+    </div>
+    <div class="about-me-content">
+      <div class="about-me-text">
+        <p>
+          Hello, welcome to my about me page where you will find a photo and video of me just introducing myself. Some things about me is my favorite current game is CS2 formerly known as csgo and I have been playing the game non-stop. I used to play the original game until a new game called valorant came out and I switched over to that. I played that game from the 2020 beta until 2023 a couple months before CS2 came out. My highest rank was Immortal 3 - top 1.5k In north america. I honestly like CSGO better just for the casualty and it's very fun too.
+        </p>
+        <p>
+          Another thing about me is that I am a wrestler and I did high school wrestling where I went to OFSAA and got 2nd, which still haunts me to this day (not really). This was back in 2019 gr. 9, and in 2020 I wanted to go for that first place in OFSAA but covid came in and ruined everything. In 2022 wrestling started again but there was no OFSAA but there was city finals and I got 1st in that. The high school I also went to was called Woburn C.I we are one of the best high school wrestling teams in Toronto.
+        </p>
+        <p>
+          Last thing about me is that the reason why I chose IT is because I realized I enjoy networking and knowing more about IT related subjects. I also noticed that there was a lot of programming in IT which I really like and I also really like the cybersecurity program it also offers within the bachelor's degree. This program also can get you an internship quickly with the right certifications and can land you a job quickly as it is very in demand. That's all from me!
+        </p>
+      </div>
+      <div class="about-me-image">
+        <img src="/Content/goat.jpeg" alt="Your Image">
+      </div>
+    </div>
+  </main>
+<% } else if (title === "Projects") { %>
+  <!-- main content for the Projects page -->
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+    </div>
+    <div class="projects-container">
+      <div class="project">
+        <img src="/Content/hangman.jpeg" alt="Hangman Game">
+        <p>Hangman Game</p>
+      </div>
+      <div class="project">
+        <img src="/Content/bmi.png" alt="BMI Calculator">
+        <p>BMI Calculator</p>
+      </div>
+    </div>
+  </main>
+<% } else if (title === "Contact Us") { %>
+  <!-- main content for the Contact Us page -->
+  <main>
+    <div class="contact-box">
+      <form>
+        <input type="text" class="input-field" placeholder="Your Name">
+        <input type="text" class="input-field" placeholder="Your Email">
+        <input type="text" class="input-field" placeholder="Subject">
+        <textarea class="input-field textarea-field" placeholder="Your message"></textarea>
+        <input type="text" class="input-field" placeholder="Captcha: What is 2+2?">
+        <button type="button" class="btn">Submit</button>
+      </form>
+    </div>
+  </main>
+<% } else { %>
+  <!-- main content for other pages -->
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to the <%= title %> page</h1>
+      </div>
+    </div>
+  </main>
+<% } %>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

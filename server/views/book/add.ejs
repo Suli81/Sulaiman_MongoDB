@@ -1,0 +1,62 @@
+<%- include("../partials/header.ejs") %>
+<%- include("../partials/main_nav.ejs") %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST" action="/book-list/add"> <!-- Added action -->
+                <div class="form-group">
+                    <label for="nameTextField">Workout Title</label>
+                    <input type="text" class="form-control"
+                    id="nameTextField"
+                    placeholder="Enter Workout Push/Pull/Legs"
+                    name="name" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="authorTextField">Name</label>
+                    <input type="text" class="form-control"
+                    id="authorTextField"
+                    placeholder="Enter your Name"
+                    name="author" required> 
+                </div>
+
+                <div class="form-group">
+                    <label for="publishedTextField">Date</label>
+                    <input type="text" class="form-control"
+                    id="publishedTextField"
+                    placeholder="Enter the Date"
+                    name="published" required> <!-- Changed name -->
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionTextField">Exercise List</label>
+                    <textarea type="text" class="form-control"
+                    id="descriptionTextField"
+                    placeholder="Enter your exercises"
+                    name="description" required></textarea> <!-- Changed name -->
+                </div>
+
+                <div class="form-group">
+                    <label for="priceTextField">Price</label>
+                    <input type="text" class="form-control"
+                    id="priceTextField"
+                    placeholder="Enter Reps"
+                    name="price" required> <!-- Changed name -->
+                </div>
+                    <br>
+                <button class="btn-btn-primary" type="submit">
+                    <i class="fas fa-edit"></i>Submit
+                </button>
+
+                <a href="/book-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i>Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/bottom_nav.ejs') %>
+<%- include('../partials/footer.ejs') %>

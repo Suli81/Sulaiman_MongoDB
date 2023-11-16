@@ -1,0 +1,133 @@
+/* Background style for the homepage */
+.home-background {
+    background-color: #f0f0f0; /* Grey background color */
+    padding: 20px;
+    color: #000; /* Text color */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .para1 {
+    flex: 2;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  .para2 {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .para2 img {
+    width: 70%;
+    height: auto;
+    max-height: 70%;
+  }
+  
+  /* Style for the bottom image */
+  .bottom-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .bottom-image img {
+    width: 100%; /* Adjust the image width to fill the container */
+    max-height: 100%; /* Ensure the image doesn't overflow the container */
+  }
+  
+
+  /* CSS styles for the "About Me" page */
+  /* CSS styles for the "About Me" page */
+  .about-me-container {
+    background-color: #f2f2f2; /* Gray background color */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .about-me-text {
+    flex: 1;
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f2f2f2; /* Gray background color for text */
+  }
+  
+  .about-me-image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .about-me-image img {
+    max-width: 100%; /* Adjust the image size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Add more CSS styles as needed */
+
+/* CSS styles for the "Projects" page */
+.projects-container {
+    display: flex;
+    justify-content: center; /* Center the projects horizontally */
+    align-items: center; /* Center the projects vertically */
+    margin: 20px;
+  }
+  
+  .project {
+    text-align: center;
+    margin: 0 20px; /* Add some horizontal spacing between the projects */
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add more CSS styles as needed */
+  
+/* Contact Us Form */
+.contact-box {
+    max-width: 500px; /* Maximum width for the contact form */
+    background-color: #fff; /* Background color for the contact form */
+    box-shadow: 0 0 20px 0 #999; /* Box shadow for the contact form */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the contact form */
+    position: absolute;
+    width: 90%; /* Adjusted width for smaller screens */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-box form {
+    margin: 20px; /* Margin around the contact form */
+}
+
+.contact-box .input-field {
+    width: 100%; /* Full width input fields */
+    max-width: 400px; /* Limit the maximum width for larger screens */
+    margin-top: 10px; /* Margin for input fields */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #777; /* Border for input fields */
+    border-radius: 14px; /* Border radius for input fields */
+    outline: none;
+}
+
+.contact-box .textarea-field {
+    width: 100%; /* Full width textarea */
+    height: 150px; /* Height of the textarea */
+    margin-top: 10px; /* Margin for the textarea */
+    padding: 10px; /* Padding for the textarea */
+}
+
+.contact-box .btn {
+    border-radius: 20px; /* Border radius for buttons */
+    color: #fff; /* Text color for buttons */
+    margin-top: 18px; /* Margin for buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    background-color: green; /* Background color for buttons */
+    font-size: 16px; /* Font size for buttons */
+    border: none; /* No border for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+}
